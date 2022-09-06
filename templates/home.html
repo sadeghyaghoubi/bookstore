@@ -3,7 +3,7 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-    <p>Welcom {{ user.username }} | <a href="{% url 'logout' %} " class="btn btn-sm btn-success">LogOut</a> </p>
+    Welcom {{ user.username }} | <a href="{% url 'logout' %} " class="btn btn-sm btn-success">LogOut</a>
 {% else %}
     <a href="{% url 'login' %} " class="btn btn-sm btn-success">LogIn</a> |  <a href="{% url 'signup' %} " class="btn btn-sm btn-success">SignUp</a>
 {% endif %}
