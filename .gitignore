@@ -1,0 +1,4 @@
+*.sqlite3
+../project 5 fasl 6 (Weblog)/.idea/
+venv/
+__pycache__/
