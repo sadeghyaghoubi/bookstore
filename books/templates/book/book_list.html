@@ -1,0 +1,26 @@
+{% extends '_base.html' %}
+{% block page_title %} لیست کتاب ها {% endblock page_title %}
+{% block content %}
+                {% for book in  books %}
+                    <div class="card shadow-sm my-3">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ book.title }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted small py-2">{{ book.date_time_create }}</h6>
+                            <p class="card-text py-3">
+                                {{ book.description }}
+                            </p>
+                            <p class="card-text py-3">
+                                نویسنده :{{ book.author }}
+                            </p>
+                            <a href="{{ book.get_absolute_url }} " class="btn btn-sm btn-success">جزئیات</a>
+
+{#                            <a href="{% url 'post_update' post.id %} " class="btn btn-sm btn-warning">Edit</a>#}
+{#                            <a href="{% url 'post_delete' post.id %} " class="btn btn-sm btn-danger">Delete</a>#}
+
+                        </div>
+
+                    </div>
+
+                {% endfor %}
+    <a href="{% url 'book_create' %} " class="btn btn-sm btn-info">اضافه کردن</a>
+{% endblock content %}
