@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e82f09fc-995d-484c-94a7-44089da0d0d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/bookstore(fasl9).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookstore(fasl9).iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/templates/book/book_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/book/book_create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/templates/book/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/book/book_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/templates/book/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/book/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/templates/book/book_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/book/book_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_change_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +53,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Learn\Django Projects\bookstore(fasl9)\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Learn\Django Projects\bookstore(fasl9)\templates\registration" />
     </key>
@@ -69,7 +78,7 @@
       <workItem from="1662289338543" duration="15968000" />
       <workItem from="1662443358160" duration="1314000" />
       <workItem from="1662447934462" duration="159000" />
-      <workItem from="1662448412354" duration="33902000" />
+      <workItem from="1662448412354" duration="47242000" />
     </task>
     <servers />
   </component>
