@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Book
 from django.urls import reverse_lazy
@@ -10,9 +10,15 @@ class BookListView(generic.ListView):
     paginate_by = 4
 
 
-class BookDetailView(generic.DetailView):
-    model = Book
-    template_name = 'book/book_detail.html'
+# class BookDetailView(generic.DetailView):
+#     model = Book
+#     template_name = 'book/book_detail.html'
+
+def book_detail_view(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    book_comments = book.comments.all()
+    return render(request, 'book/book_detail.html', {'book': book, 'comments': book_comments})
+
 
 
 class BookCreateView(generic.CreateView):
