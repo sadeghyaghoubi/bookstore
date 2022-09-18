@@ -3,12 +3,17 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-    <br>
-    Welcome {{ user.username }} | <a href="{% url 'book_list' %} " class="btn btn-sm btn-info">Book_list</a><br>
-    <br>
-    <a href="{% url 'logout' %} " class="btn btn-sm btn-success">LogOut</a> | <a class="btn btn-sm btn-success" href="{% url 'password_change' %}" role="button">Change Password</a>
+     <br><br> <br>
+    <div class="d-flex justify-content-center align-items-center">
+    Welcome {{ user.username }} | <a href="{% url 'book_list' %} " class="btn btn-sm btn-info">لیست کتاب ها</a><br>
+   </div>
+    <br> <br>
+
 {% else %}
-    <br>
-    <a href="{% url 'login' %} " class="btn btn-sm btn-success">LogIn</a> |  <a href="{% url 'signup' %} " class="btn btn-sm btn-success">SignUp</a>
+    <br><br><br><br>
+    <div class="d-flex justify-content-center align-items-center">
+    <a href="{% url 'login' %} " class="btn btn-sm btn-success">ورود</a> |  <a href="{% url 'signup' %} " class="btn btn-sm btn-success">ثبت نام</a>
+    </div>
 {% endif %}
+
 {% endblock content %}

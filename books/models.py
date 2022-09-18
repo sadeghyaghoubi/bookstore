@@ -9,6 +9,8 @@ class Book (models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2, )
     date_time_create = models.DateTimeField(auto_now_add=True)
     date_time_modify = models.DateTimeField(auto_now=True)
+    cover = models.ImageField(upload_to='covers/', blank=True)
+
 
     def __str__(self):
         return self.title
