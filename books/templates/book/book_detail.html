@@ -20,10 +20,14 @@
                         <div class="col-xs-12 col-md-6 text-center text-md-end mt-md-1 mt-4">
                             <h1>{{ book.title|capfirst }}</h1>
                             <h5 class="small my-1"><span class="text-muted">نویسنده: </span>{{ book.author }}</h5>
+                            <h5 class="small my-1"><span class="text-muted">ایجاد کننده: </span>{{ book.user }}</h5>
+
                             <br>
                             <br><br><br>
-                            <a href="{% url 'book_update' book.id %} " class="btn btn-sm btn-success">ویرایش</a>
-                            <a href="{% url 'book_delete' book.id %} " class="btn btn-sm btn-danger">حذف</a> <br><br>
+                            {% if book.user == user %}
+                                <a href="{% url 'book_update' book.id %} " class="btn btn-sm btn-success">ویرایش</a>
+                                <a href="{% url 'book_delete' book.id %} " class="btn btn-sm btn-danger">حذف</a> <br><br>
+                            {% endif %}
                             <a href="{% url 'book_list' %} " class="btn btn-sm btn-info">بازگشت به لیست کتاب ها</a>
                         </div>
                         <div class="col-xs-12 col-md-3 d-flex flex-column">

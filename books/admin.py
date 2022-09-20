@@ -11,6 +11,6 @@ class BookAdmin(admin.ModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ('user', 'book', 'text', 'date_time_create', )
+    list_display = ('user', 'book', 'text', 'date_time_create', 'is_active', 'recommend' )
     ordering = ('date_time_create',)
 
